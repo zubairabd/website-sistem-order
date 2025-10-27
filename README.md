@@ -1,4 +1,4 @@
-# 💼 Website Jasa Profesional – "JasaAnda"
+# 💼 Website Jasa Profesional – "Elinf"
 
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-blue?style=for-the-badge&logo=tailwindcss)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow?style=for-the-badge&logo=javascript)
