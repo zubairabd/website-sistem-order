@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nama Bisnis Anda - Solusi Jasa Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Script ScrollReveal.js ditambahkan --><script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Menyembunyikan modal secara default */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal:not(.open) {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        /* Style untuk menyembunyikan elemen animasi sebelum muncul */
+        .reveal-item {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
+            <<a href="#" class="flex items-center space-x-2">
+                <img src="elinf.png" alt="Logo Perusahaan" class="h-10 w-10">
+                <span class="text-3xl font-bold text-red-700 hidden sm:block">Elinf</span>
+            </a>
+             <ul class="hidden md:flex items-center space-x-8">
+                <li><a href="#layanan" class="font-semibold text-slate-600 hover:text-red-700 transition duration-300">Layanan</a></li>
+                <li><a href="#kontak" class="font-semibold text-slate-600 hover:text-red-700 transition duration-300">Kontak</a></li>
+                <!-- Warna tombol diubah ke merah redup --><li><a href="#kontak" class="bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-6 rounded-full transition duration-300">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section --><section class="bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-4 reveal-item">Solusi Profesional untuk Bisnis Anda</h1>
+                <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-8 reveal-item">Kami menyediakan layanan terbaik untuk membantu Anda bertumbuh. Lihat layanan yang kami tawarkan di bawah ini.</p>
+                <!-- Warna tombol diubah ke merah redup --><a href="#layanan" class="bg-red-700 hover:bg-red-800 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg reveal-item">
+                    Lihat Layanan Kami
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section --><section id="layanan" class="py-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-slate-900 mb-12 reveal-item">Layanan Kami</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- Kartu Jasa 1 (ditambah class reveal-item) --><div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col reveal-item">
+                        <img src="https://placehold.co/600x400/b91c1c/ffffff?text=Web+Development" alt="Jasa Web Development" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Web Development</h3>
+                            <p class="text-slate-600 mb-6 flex-grow">Membangun website modern, cepat, dan responsif untuk profil perusahaan, toko online, atau aplikasi web kustom Anda.</p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button onclick="openModal('web')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Lihat Detail
+                                </button>
+                                <button onclick="kirimWA('Web Development')" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Jasa 2 (ditambah class reveal-item) --><div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col reveal-item">
+                        <img src="https://placehold.co/600x400/db2777/ffffff?text=Desain+Grafis" alt="Jasa Desain Grafis" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Desain Grafis</h3>
+                            <p class="text-slate-600 mb-6 flex-grow">Solusi desain visual untuk kebutuhan branding Anda, mulai dari logo, brosur, hingga konten media sosial yang menarik.</p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button onclick="openModal('desain')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Lihat Detail
+                                </button>
+                                <button onclick="kirimWA('Desain Grafis')" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Kartu Jasa 3 (ditambah class reveal-item) --><div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col reveal-item">
+                        <img src="https://placehold.co/600x400/d97706/ffffff?text=Digital+Marketing" alt="Jasa Digital Marketing" class="w-full h-48 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold mb-2">Digital Marketing</h3>
+                            <p class="text-slate-600 mb-6 flex-grow">Tingkatkan jangkauan bisnis Anda melalui strategi SEO, Iklan Sosial Media (Meta Ads), dan Google Ads yang efektif.</p>
+                            <div class="flex flex-col sm:flex-row gap-3">
+                                <button onclick="openModal('digital')" class="w-full bg-slate-200 hover:bg-slate-300 text-slate-800 font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Lihat Detail
+                                </button>
+                                <button onclick="kirimWA('Digital Marketing')" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full transition duration-300">
+                                    Pesan via WA
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section id="kontak" class="py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4 reveal-item">Tertarik Bekerja Sama?</h2>
+                <p class="text-lg text-slate-600 mb-8 reveal-item">Jangan ragu untuk menghubungi kami. Klik tombol di bawah ini untuk memulai percakapan langsung melalui WhatsApp.</p>
+                <button onclick="kirimWA('Diskusi Umum')" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300 text-lg reveal-item">
+                    Chat Kami Sekarang
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-slate-900 text-slate-400 text-center py-10">
+        <p>&copy; 2025 JasaAnda. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <!-- Modal (Popup Detail Jasa) --><div id="modal" class="modal fixed inset-0 z-[100] flex items-center justify-center p-4">
+        <!-- Latar belakang gelap --><div id="modal-overlay" class="absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        
+        <!-- Konten Modal --><div class="bg-white w-full max-w-2xl rounded-xl shadow-2xl z-10 relative">
+            <!-- Tombol Close --><button id="close-modal-btn" class="absolute -top-3 -right-3 bg-red-600 hover:bg-red-700 text-white w-10 h-10 rounded-full shadow-lg flex items-center justify-center text-xl font-bold">
+                &times;
+            </button>
+            
+            <div class="p-6 md:p-8">
+                <h2 id="modal-title" class="text-3xl font-bold text-slate-900 mb-4"></h2>
+                <p id="modal-deskripsi" class="text-slate-600 mb-8 leading-relaxed"></p>
+                
+                <button id="modal-wa-btn" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 text-lg">
+                    Saya Mau Jasa Ini (via WA)
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // --- PENGATURAN PENTING ---
+        // Ganti nomor ini dengan nomor WhatsApp Anda (diawali dengan 62)
+        const nomorWA = '6281234567890'; // Contoh: 6281234567890
+
+        // --- Data untuk Detail Jasa ---
+        const layananData = {
+            'web': {
+                judul: 'Web Development Profesional',
+                deskripsi: 'Kami menawarkan layanan pembuatan website lengkap, mulai dari desain awal (UI/UX), pengembangan (coding) front-end dan back-end, hingga website Anda siap online. Kami menggunakan teknologi modern seperti React, Node.js, dan Tailwind CSS untuk memastikan website Anda cepat, aman, dan mudah digunakan di semua perangkat.'
+            },
+            'desain': {
+                judul: 'Desain Grafis & Branding',
+                deskripsi: 'Tim desainer kami siap membantu Anda membangun identitas visual yang kuat. Layanan kami mencakup desain logo, pembuatan brand guidelines (pedoman merek), desain kemasan, brosur, kartu nama, dan semua materi promosi yang Anda butuhkan untuk tampil profesional dan konsisten.'
+            },
+            'digital': {
+                judul: 'Strategi Digital Marketing',
+                deskripsi: 'Jangkau lebih banyak pelanggan dengan strategi pemasaran digital yang tepat sasaran. Kami akan menganalisis pasar Anda dan menjalankan kampanye iklan di Google (Google Ads), Meta (Facebook & Instagram Ads), serta optimasi mesin pencari (SEO) agar website Anda mudah ditemukan.'
+            }
+        };
+
+        // --- Fungsi Logika WhatsApp ---
+        function kirimWA(namaJasa) {
+            let templatePesan = '';
+            
+            if(namaJasa === 'Diskusi Umum') {
+                templatePesan = `Halo, saya mengunjungi website Anda dan tertarik untuk berdiskusi lebih lanjut.`;
+            } else {
+                templatePesan = `Halo, saya tertarik dengan jasa "${namaJasa}" yang Anda tawarkan. Bisakah saya mendapatkan informasi lebih lanjut?`;
+            }
+            
+            const pesanWA = encodeURIComponent(templatePesan);
+            const urlWA = `https://wa.me/${nomorWA}?text=${pesanWA}`;
+            
+            window.open(urlWA, '_blank');
+        }
+
+        // --- Fungsi Logika Modal ---
+        const modal = document.getElementById('modal');
+        const modalOverlay = document.getElementById('modal-overlay');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDeskripsi = document.getElementById('modal-deskripsi');
+        const modalWABtn = document.getElementById('modal-wa-btn');
+
+        function openModal(serviceKey) {
+            const data = layananData[serviceKey];
+            if (!data) return; // Keluar jika data tidak ditemukan
+
+            modalTitle.textContent = data.judul;
+            modalDeskripsi.textContent = data.deskripsi;
+            
+            // Atur tombol WA di dalam modal
+            modalWABtn.onclick = function() {
+                kirimWA(data.judul);
+            };
+
+            modal.classList.add('open');
+        }
+
+        function closeModal() {
+            modal.classList.remove('open');
+        }
+
+        // Event listener untuk menutup modal
+        closeModalBtn.addEventListener('click', closeModal);
+        modalOverlay.addEventListener('click', closeModal);
+
+        // Inisialisasi Animasi ScrollReveal.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const sr = ScrollReveal({
+                distance: '50px', // Jarak elemen bergerak
+                duration: 1000,   // Durasi animasi
+                easing: 'ease-out', // Efek animasi
+                delay: 200,       // Sedikit jeda
+                reset: false      // Animasi hanya berjalan sekali
+            });
+
+            // Menerapkan animasi ke semua elemen dengan kelas 'reveal-item'
+            sr.reveal('.reveal-item', {
+                origin: 'bottom', // Animasi muncul dari bawah
+                interval: 150     // Jeda antar elemen
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
+
